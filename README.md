@@ -30,30 +30,4 @@ Instructions:
   4.3. Example url with valid direction parameter: "http://localhost:3000/api/posts?tag=tech&sortBy=likes&direction=desc" 
 
 * To run the test suite, simply enter the command "bundle exec rspec"
-
-============================
-
-Notes to reviewer:
-
-My apologies for the time that it has taken for me to complete this project. There are a few different things that I would like to take note of.
-
-First, I'm currently working full time, 5 days a week, night shift, consistent overtime, and I have 4 kids. Because of this, time has been very limited, so I was only able to dedicate on average about 3 hours per day at most towards the project.
-
-Actual completion time for the project: ~15 hours.
-
-Additionally I would like to mention that prior to receiving this assessment, I had hardly any knowledge regarding what an API was, much less how to create one. This has also been my very first exposure to Ruby on Rails, or anything beyond the realm of writing basic html, css, javascript, ruby, c++, or data structures/algorithms. So I've essentially learned everything on the spot to get this project done.
-
-I'm excited and ready for the constructive criticism coming my way. Please do give me as many pointers as possible so that I can continue to improve! 
-
-- Logan Hosoda
-
-============================
-
-Known issues/areas to improve upon:
-
-1. Testing suite
-  - The suite lacks robustness. Due to lack of time, and lack of knowledge, I decided to expedite submission and implemented what I already knew, so that I could put my focus into researching/building the project. This is undoubtedly an area that could greatly benefit from improvement.
-  - I wasn't sure if it was necessary to do more with the testing suite for the Models, knowing that the Controller passing it's tests would indicate that the Model is also functioning correctly. For the sake of avoiding redundancy (and to save time), I decided to forgo this implementation. Please feel free to let me know what the best practice is!
-2. Caching
-  - For the same reasons above, I decided to implement a 'pseudo-cache' method. Essentially it eliminates the need to make multiple API requests by saving the result of the API fetch to the database. All subsequent check to specified urls will check the database to see if the 'chached' data has expired. If expired, then it will fetch from the Hatchways API, and update with the fresh data.
-  - This method is quite naive/linear, and doesn't utilize the many powerful caching methods available to Rails. Given the time to put more research into implementing these methods, I would look into replacing my current method.
+  
